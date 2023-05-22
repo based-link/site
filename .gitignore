@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+npm-debug.log*
+.eslintcache
+
+# production
+/.next
+/build
+
+# misc
+.DS_Store
+/.idea
