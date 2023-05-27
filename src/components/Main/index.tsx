@@ -10,61 +10,64 @@ export const Main = () => {
   return (
     <main className={css.main}>
       <h1 className={css.main__title}>
-        Запасной аэродром в мире социальных сетей
+        Your alternate aerodrome in the world of social media
       </h1>
       <p className={css.main__text}>
-        Optics – это платформа, которая агрегирует все ваши социальные
-        активности с различных платформ и создает общую ленту. Мы стремимся
-        предоставить вам свободу, приватность и возможность сохранить и
-        контролировать свой контент в децентрализованной сети, которая не
-        подвержена цензуре или произвольным удалениям.
+        Optics is a platform that aggregates all your social activity from
+        various platforms and creates a shared feed. We aim to give you freedom,
+        privacy, and the ability to keep and control your content in a
+        decentralized network that is not subject to censorship or arbitrary
+        deletions.
       </p>
 
       <Image src={mainIamge} alt="main" priority />
       <div className={css.main__intro}>
-        <h2>Всем привет &#128075;</h2>
+        <h2>Decentralized network &#128075;</h2>
         <div className={css.main__intro_wrapper}>
           <p>
-            Социальные сети в любой момент могут удалить ваш контент или даже
-            заблокировать ваш аккаунт без предупреждения или объяснения причин.
-            Это может быть крайне разочаровывающим и потенциально разрушительным
-            для вас в качестве контент-мейкера или паблишера.
+            Social media can remove your content or even block your account at
+            any time without warning or explanation. This can be extremely
+            frustrating and potentially devastating for you as a content creator
+            or publisher.
           </p>
+
           <p>
-            Optics предоставляет вам удобный способ управления вашей
-            активностью, собирая ее из разных социальных сетей и сохраняя в
-            безопасной и децентрализованной сети. Мы не требуем от пользователей
-            переходить на новую платформу или оставлять существующие социальные
-            сети. Вместо этого мы агрегируем и объединяем их контент. Это
-            означает, что вы можете оставаться активным на своих любимых
-            социальных платформах, таких как Facebook, Twitter, Instagram и
-            YouTube.
+            Optics gives you a convenient way to manage your activity by
+            collecting it from different social networks and storing it in a
+            secure and decentralized network. We don’t require users to move to
+            a new platform or leave their existing social networks. Instead, we
+            aggregate and merge their content. This means you can stay active on
+            your favorite social platforms such as Facebook, Twitter, Instagram,
+            and YouTube.
           </p>
+
           <p>
-            С Optics ваш контент сохраняется в распределенной сети узлов, и
-            никакая централизованная организация не может удалить его без вашего
-            разрешения. Ваш контент и аккаунт остаются под вашим контролем, и
-            никто не может вмешиваться или цензурировать его.
+            With Optics, your content is stored in a distributed network of
+            nodes, and no centralized organization can remove it without your
+            permission. Your content and account remain under your control, and
+            no one can interfere with or censor it.
           </p>
+
           <p>
-            Кроме того, Optics предлагает возможность подключить ваш собственный
-            децентрализованный домен, который станет точкой доступа к вашему
-            профилю. Это обеспечивает надежность, устойчивость к цензуре и
-            защиту данных.
+            In addition, Optics offers the option to connect your own
+            decentralized domain, which becomes the access point to your
+            profile. This ensures reliability, resistance to censorship, and
+            data protection.
           </p>
+
           <p>
-            Optics – ваш запасной аэродром, ваш план Б в мире социальных сетей.
-            Мы понимаем, что существующие социальные сети могут быть
-            непредсказуемыми и что могут возникнуть ситуации, в которых ваш
-            контент или аккаунт могут быть уничтожены. Поэтому мы предлагаем вам
-            резервное решение, чтобы вы могли сохранить свою социальную
-            активность и контроль над вашим контентом.
+            Optics is your reserve airfield, your plan B in the world of social
+            networking. We understand that existing social networks can be
+            unpredictable, and situations can arise where your content or
+            account can be compromised. That’s why we offer you a backup
+            solution, so you can maintain your social activity and retain
+            control over your content.
           </p>
         </div>
       </div>
 
       <div className={css.main__team}>
-        <h3 className={css.main__team_title}>Команда</h3>
+        <h3 className={css.main__team_title}>Team</h3>
 
         <div className={css.main__team_wrapper}>
           <div>

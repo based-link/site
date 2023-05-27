@@ -11,7 +11,7 @@ const HomePage = () => {
         <title>Optics.vision</title>
         <meta
           name="description"
-          content="Decentralized social network as second choice"
+          content="Your plan B in the world of social networking"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
