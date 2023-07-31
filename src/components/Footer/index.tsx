@@ -1,4 +1,3 @@
-import Image from "next/image"
 import css from "./index.module.css"
 
 export const Footer = () => {
@@ -14,7 +13,7 @@ export const Footer = () => {
         <h5>Links</h5>
         <ul>
           <li>
-            <a href="https://twitter.com/opticsprotocol">Twitter</a>
+            <a href="https://twitter.com/based_link_labs">Twitter</a>
           </li>
           <li>
             <a href="https://github.com/based-link">Github</a>
