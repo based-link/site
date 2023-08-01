@@ -1,5 +1,4 @@
 import Image from "next/image"
-import mainIamge from "@/public/main.jpg"
 import GafarovImage from "@/public/Gafarov.jpg"
 import BlinovaImage from "@/public/Blinova.jpg"
 import GithubIcon from "@/public/github.svg"
@@ -13,14 +12,13 @@ export const Main = () => {
         Your alternate aerodrome in the world of social media
       </h1>
       <p className={css.main__text}>
-        Optics is a platform that aggregates all your social activity from
+        Based is a platform that aggregates all your social activity from
         various platforms and creates a shared feed. We aim to give you freedom,
         privacy, and the ability to keep and control your content in a
         decentralized network that is not subject to censorship or arbitrary
         deletions.
       </p>
 
-      <Image src={mainIamge} alt="main" priority />
       <div className={css.main__intro}>
         <h2>Decentralized network &#128075;</h2>
         <div className={css.main__intro_wrapper}>
@@ -32,7 +30,7 @@ export const Main = () => {
           </p>
 
           <p>
-            Optics gives you a convenient way to manage your activity by
+            Based gives you a convenient way to manage your activity by
             collecting it from different social networks and storing it in a
             secure and decentralized network. We don’t require users to move to
             a new platform or leave their existing social networks. Instead, we
@@ -42,21 +40,21 @@ export const Main = () => {
           </p>
 
           <p>
-            With Optics, your content is stored in a distributed network of
+            With Based, your content is stored in a distributed network of
             nodes, and no centralized organization can remove it without your
             permission. Your content and account remain under your control, and
             no one can interfere with or censor it.
           </p>
 
           <p>
-            In addition, Optics offers the option to connect your own
+            In addition, Based offers the option to connect your own
             decentralized domain, which becomes the access point to your
             profile. This ensures reliability, resistance to censorship, and
             data protection.
           </p>
 
           <p>
-            Optics is your reserve airfield, your plan B in the world of social
+            Based is your reserve airfield, your plan B in the world of social
             networking. We understand that existing social networks can be
             unpredictable, and situations can arise where your content or
             account can be compromised. That’s why we offer you a backup

@@ -1,12 +1,9 @@
-import Image from "next/image"
-import logo from "@/public/logo.svg"
 import css from "./index.module.css"
 
 export const Footer = () => {
   return (
     <footer className={css.footer}>
       <div>
-        <Image src={logo} alt="logo" />
         <p>
           Your reserve airfield, your plan B in the world of social networking
         </p>
@@ -16,10 +13,10 @@ export const Footer = () => {
         <h5>Links</h5>
         <ul>
           <li>
-            <a href="https://twitter.com/opticsprotocol">Twitter</a>
+            <a href="https://twitter.com/based_link_labs">Twitter</a>
           </li>
           <li>
-            <a href="https://github.com/optics-vision">Github</a>
+            <a href="https://github.com/based-link">Github</a>
           </li>
         </ul>
       </div>

@@ -5,7 +5,7 @@
 
 .main__title {
   width: 760px;
-  margin-bottom: 27px;
+  margin: 27px auto;
   color: var(--dark);
   font-size: 99px;
   line-height: 155px;
@@ -15,6 +15,7 @@
 
 .main__text {
   width: 600px;
+  margin-bottom: 100px;
   color: var(--dark);
   font-size: 18px;
   line-height: 24px;
