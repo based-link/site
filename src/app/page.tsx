@@ -1,27 +1,23 @@
-import Image from "next/image"
-import GafarovImage from "@/public/Gafarov.jpg"
-import BlinovaImage from "@/public/Blinova.jpg"
-import GithubIcon from "@/public/github.svg"
-import TwitterIcon from "@/public/twitter.svg"
-import css from "./index.module.css"
+import Image from 'next/image'
 
-export const Main = () => {
+export default function Home() {
   return (
-    <main className={css.main}>
-      <h1 className={css.main__title}>
+    <main className="mb-20">
+      <h1 className="text-balance mx-auto my-7 text-center text-4xl font-semibold md:text-5xl/snug lg:text-6xl/snug xl:text-7xl/snug">
         Your alternate aerodrome in the world of social media
       </h1>
-      <p className={css.main__text}>
+      <p className="text-balance mx-auto mb-6 max-w-2xl text-center">
         Based is a platform that aggregates all your social activity from
         various platforms and creates a shared feed. We aim to give you freedom,
         privacy, and the ability to keep and control your content in a
         decentralized network that is not subject to censorship or arbitrary
         deletions.
       </p>
-
-      <div className={css.main__intro}>
-        <h2>Decentralized network &#128075;</h2>
-        <div className={css.main__intro_wrapper}>
+      <div className="mb-6 lg:flex lg:gap-12">
+        <h2 className="mb-4 text-3xl font-semibold lg:mb-0">
+          Decentralized network &#128075;
+        </h2>
+        <div className="flex flex-col gap-4">
           <p>
             Social media can remove your content or even block your account at
             any time without warning or explanation. This can be extremely
@@ -64,48 +60,51 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className={css.main__team}>
-        <h3 className={css.main__team_title}>Team</h3>
-
-        <div className={css.main__team_wrapper}>
-          <div>
-            <Image src={GafarovImage} alt="Nazim Gafarov" />
+      <div>
+        <h3 className="mb-6 text-center text-3xl font-semibold">Team</h3>
+        <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-col gap-2">
+            <Image
+              alt="Nazim Gafarov"
+              className="rounded-md"
+              height={200}
+              priority={false}
+              src="/Gafarov.jpg"
+              width={200}
+            />
             <p>Nazim Gafarov</p>
-            <div className={css.main__team_socialnet}>
+            <div className="flex gap-4">
               <a href="https://twitter.com/zapolnoch" target="_blank">
-                <Image src={TwitterIcon} alt="Twitter" />
+                <Image
+                  alt="Twitter"
+                  height={40}
+                  src="/twitter.svg"
+                  width={40}
+                />
               </a>
               <a href="https://github.com/zapolnoch" target="_blank">
-                <Image src={GithubIcon} alt="Github" />
+                <Image alt="Github" height={40} src="/github.svg" width={40} />
               </a>
             </div>
           </div>
-          <div>
-            <Image src={BlinovaImage} alt="Anastasia Blinova" />
+          <div className="flex flex-col gap-2">
+            <Image
+              alt="Anastasia Blinova"
+              className="rounded-md"
+              height={200}
+              priority={false}
+              src="/Blinova.jpg"
+              width={200}
+            />
             <p>Anastasia Blinova</p>
-            <div className={css.main__team_socialnet}>
+            <div className="flex gap-4">
               <a href="https://github.com/Blinina">
-                <Image src={GithubIcon} alt="Github" />
+                <Image alt="Github" height={40} src="/github.svg" width={40} />
               </a>
             </div>
           </div>
         </div>
       </div>
-
-      {/* <form className={css.main__form}>
-        <h3>Subscribe to our newsletter</h3>
-        <p>
-          The latest news, articles, and resources, sent to your inbox weekly.
-        </p>
-        <div className={css.main__form_input}>
-          <input
-            type="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            placeholder="Enter your email"
-          />
-          <button>Subscribe</button>
-        </div>
-      </form> */}
     </main>
   )
 }

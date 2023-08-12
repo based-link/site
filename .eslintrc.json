@@ -1,7 +1,8 @@
 {
-  "extends": ["next", "prettier"],
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": "error"
-  }
+  "extends": [
+    "plugin:jsx-a11y/recommended",
+    "plugin:perfectionist/recommended-natural",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ]
 }
