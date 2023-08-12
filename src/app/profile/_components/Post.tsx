@@ -37,19 +37,21 @@ export function Post({ content, date, image, link, type }: FeedItem) {
           {icon}
           <p>{format(new Date(date), 'd MMM yyyy')}</p>
         </div>
-        {image && (
-          <Image
-            onError={e => {
-              ;(e.target as HTMLImageElement).style.display = 'none'
-            }}
-            alt=""
-            className="mx-auto mb-4 w-1/2"
-            height={100}
-            src={image}
-            width={100}
-          />
-        )}
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <div className="flex flex-col gap-4 md:flex-row">
+          {image && (
+            <Image
+              onError={e => {
+                ;(e.target as HTMLImageElement).style.display = 'none'
+              }}
+              alt=""
+              className="w-full rounded-md border-2 border-solid border-gray-200/10 md:h-full md:w-1/4"
+              height={100}
+              src={image}
+              width={200}
+            />
+          )}
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+        </div>
       </a>
     </article>
   )
