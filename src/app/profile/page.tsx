@@ -37,7 +37,7 @@ export default async function Profile() {
           </p>
         </div>
       </section>
-      <section className="flex flex-col gap-6">
+      <section className="columns-1 gap-x-4 md:columns-2 lg:columns-3">
         {data.feed.map(post => (
           <Post key={post.id} {...post} />
         ))}

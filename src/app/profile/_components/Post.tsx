@@ -6,6 +6,7 @@ import { FeedItemType } from '@/entities/profile'
 import cn from 'classnames'
 import format from 'date-fns/format'
 import Image from 'next/image'
+import { useState } from 'react'
 import { Instagram, Twitter, Youtube } from 'react-feather'
 
 const colors = {
@@ -22,13 +23,20 @@ const icons = {
 }
 
 export function Post({ content, date, image, link, type }: FeedItem) {
+  const [isCorrectImage, setIsCorrectImage] = useState(Boolean(image))
+
   const bgColor = colors[type] || 'bg-slate-400/10'
   const icon = icons[type]
 
   return (
-    <article className={cn('rounded-md px-3 py-4', bgColor)}>
+    <article
+      className={cn(
+        'mb-4 break-inside-avoid rounded-md transition-shadow hover:shadow-md',
+        bgColor,
+      )}
+    >
       <a
-        className="block"
+        className="block px-3 py-4"
         href={link.url}
         rel="noopener noreferrer"
         target="_blank"
@@ -37,17 +45,17 @@ export function Post({ content, date, image, link, type }: FeedItem) {
           {icon}
           <p>{format(new Date(date), 'd MMM yyyy')}</p>
         </div>
-        <div className="flex flex-col gap-4 md:flex-row">
-          {image && (
+        <div className="flex flex-col gap-4">
+          {image && isCorrectImage && (
             <Image
-              onError={e => {
-                ;(e.target as HTMLImageElement).style.display = 'none'
+              onError={() => {
+                setIsCorrectImage(false)
               }}
               alt=""
-              className="w-full rounded-md border-2 border-solid border-gray-200/10 md:h-full md:w-1/4"
+              className="w-full rounded-md border-2 border-solid border-gray-200/10"
               height={100}
               src={image}
-              width={200}
+              width={300}
             />
           )}
           <div dangerouslySetInnerHTML={{ __html: content }} />
