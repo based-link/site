@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 
-import { Footer } from '@/components/Footer'
 import cn from 'classnames'
 import { Inter } from 'next/font/google'
 
@@ -21,7 +20,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={cn(inter.className, 'mx-auto my-0 w-full max-w-6xl px-6')}
       >
         {children}
-        <Footer />
       </body>
     </html>
   )
