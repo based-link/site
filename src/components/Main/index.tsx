@@ -1,6 +1,5 @@
 import Image from "next/image"
 import GafarovImage from "@/public/Gafarov.jpg"
-import BlinovaImage from "@/public/Blinova.jpg"
 import GithubIcon from "@/public/github.svg"
 import TwitterIcon from "@/public/twitter.svg"
 import css from "./index.module.css"
@@ -72,19 +71,10 @@ export const Main = () => {
             <Image src={GafarovImage} alt="Nazim Gafarov" />
             <p>Nazim Gafarov</p>
             <div className={css.main__team_socialnet}>
-              <a href="https://twitter.com/zapolnoch" target="_blank">
+              <a href="https://twitter.com/zapolnoch2" target="_blank">
                 <Image src={TwitterIcon} alt="Twitter" />
               </a>
               <a href="https://github.com/zapolnoch" target="_blank">
-                <Image src={GithubIcon} alt="Github" />
-              </a>
-            </div>
-          </div>
-          <div>
-            <Image src={BlinovaImage} alt="Anastasia Blinova" />
-            <p>Anastasia Blinova</p>
-            <div className={css.main__team_socialnet}>
-              <a href="https://github.com/Blinina">
                 <Image src={GithubIcon} alt="Github" />
               </a>
             </div>
