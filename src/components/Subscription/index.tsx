@@ -1,7 +1,8 @@
 import css from "@/components/Main/index.module.css"
-import { useRef, FormEvent } from "react"
+import { useRef, FormEvent, useState } from "react"
 
 export const SubscriptionForm = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false)
   const inputRef = useRef(null)
 
   const subscribeUser = async (event: FormEvent<HTMLFormElement>) => {
@@ -18,23 +19,35 @@ export const SubscriptionForm = () => {
 
       method: "POST",
     })
+
+    if (res.status == 201) {
+      inputRef.current.value = ""
+      setIsSubmitted(true)
+    }
   }
 
   return (
-    <form className={css.main__form} onSubmit={subscribeUser}>
-      <h3>Subscribe to our newsletter</h3>
-      <p>
-        The latest news, articles, and resources, sent to your inbox weekly.
-      </p>
-      <div className={css.main__form_input}>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          ref={inputRef}
-          required
-        />
-        <button>Subscribe</button>
-      </div>
-    </form>
+    <div>
+      <form className={css.main__form} onSubmit={subscribeUser}>
+        <h3>Subscribe to our newsletter</h3>
+        <p>
+          The latest news, articles, and resources, sent to your inbox weekly.
+        </p>
+        <div className={css.main__form_input}>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            ref={inputRef}
+            required
+          />
+          <button>Subscribe</button>
+        </div>
+      </form>
+
+      {isSubmitted && (
+        // eslint-disable-next-line react/no-unescaped-entities
+        <p>Thank you for subscribing! You'll receive our newsletter soon.</p>
+      )}
+    </div>
   )
 }
