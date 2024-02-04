@@ -3,6 +3,7 @@ import GafarovImage from "@/public/Gafarov.jpg"
 import GithubIcon from "@/public/github.svg"
 import TwitterIcon from "@/public/twitter.svg"
 import css from "./index.module.css"
+import { SubscriptionForm } from "@/components/Subscription"
 
 export const Main = () => {
   return (
@@ -82,20 +83,7 @@ export const Main = () => {
         </div>
       </div>
 
-      {/* <form className={css.main__form}>
-        <h3>Subscribe to our newsletter</h3>
-        <p>
-          The latest news, articles, and resources, sent to your inbox weekly.
-        </p>
-        <div className={css.main__form_input}>
-          <input
-            type="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            placeholder="Enter your email"
-          />
-          <button>Subscribe</button>
-        </div>
-      </form> */}
+      <SubscriptionForm />
     </main>
   )
 }

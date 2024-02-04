@@ -22,6 +22,7 @@
     "prettier": "2.8.8"
   },
   "dependencies": {
+    "isomorphic-unfetch": "^4.0.2",
     "next": "13.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
