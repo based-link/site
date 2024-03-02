@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.24.1",
+    "@web3modal/wagmi": "^4.0.11",
     "classnames": "^2.3.2",
     "date-fns": "^2.30.0",
-    "next": "13.4.13",
+    "next": "14.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-feather": "^2.0.10"
+    "react-feather": "^2.0.10",
+    "viem": "^2.7.16",
+    "wagmi": "^2.5.7"
   },
   "devDependencies": {
     "@types/node": "20.4.10",
@@ -30,7 +34,7 @@
     "postcss": "8.4.27",
     "prettier": "^3.0.1",
     "prettier-plugin-tailwindcss": "^0.5.2",
-    "tailwindcss": "^0.0.0-insiders.77ae724",
+    "tailwindcss": "^3.4.1",
     "typescript": "5.1.6"
   }
 }

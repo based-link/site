@@ -1,9 +1,13 @@
+import { ConnectButton } from '@/components/ConnectButton'
 import { Footer } from '@/components/Footer'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
+      <header>
+        <ConnectButton />
+      </header>
       <main className="mb-20">
         <h1 className="text-balance mx-auto mb-7 text-center text-4xl font-semibold md:text-5xl/snug lg:text-6xl/snug xl:text-7xl/snug">
           Your alternate aerodrome in the world of social media
