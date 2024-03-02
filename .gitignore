@@ -10,3 +10,5 @@ npm-debug.log*
 # misc
 .DS_Store
 /.idea
+
+.env
