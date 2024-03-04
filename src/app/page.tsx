@@ -9,10 +9,10 @@ export default function Home() {
         <ConnectButton />
       </header>
       <main className="mb-20">
-        <h1 className="text-balance mx-auto mb-7 text-center text-4xl font-semibold md:text-5xl/snug lg:text-6xl/snug xl:text-7xl/snug">
+        <h1 className="mx-auto mb-7 text-balance text-center text-4xl font-semibold md:text-5xl/snug lg:text-6xl/snug xl:text-7xl/snug">
           Your alternate aerodrome in the world of social media
         </h1>
-        <p className="text-balance mx-auto mb-6 max-w-2xl text-center">
+        <p className="mx-auto mb-6 max-w-2xl text-balance text-center">
           Based is a platform that aggregates all your social activity from
           various platforms and creates a shared feed. We aim to give you
           freedom, privacy, and the ability to keep and control your content in
