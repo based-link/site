@@ -2,6 +2,7 @@
 const nextConfig = {
   experimental: {
     webpackBuildWorker: true,
+    appDir: true
   },
   images: {
     remotePatterns: [
